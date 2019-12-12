@@ -56,9 +56,8 @@ class EncryptedPassword():
                
     ## 
     def __init__(self,username=None,password=None,from_file=False, encrypt=True,
-                filename_for_key='..\\encryption_key.bin',
-                filename_for_password='..\\encrypted_pwd.bin',
-                filename_for_username = '..\\encrypted_username.bin'):
+                filename_for_key=None, filename_for_password=None,
+                filename_for_username = None):
         """Accepts either a username and password to encyrypt, 
         or loads a previously encrypyed password from file.
         
@@ -72,7 +71,42 @@ class EncryptedPassword():
             filename_for_key (str): filepath for key.bin (default is'..\\encryption_key.bin')
             filename_for_password: filepath for password.bin (default is'..\\encryption_pwd.bin')
             filename_for_username: filepath for username.bin (default is'..\\encrypted_username.bin')
-            """
+        """
+        import os
+        if filename_for_key is None:
+            filename_for_key='../.secret/encryption_key.bin'
+            
+        if filename_for_username is None:
+            filename_for_username = '../.secret/encrypted_username.bin'
+        
+        if filename_for_password is None:
+            filename_for_password='../.secret/encrypted_pwd.bin'
+        
+        folders = [filename_for_key,filename_for_username,filename_for_password]
+
+
+        # self._errors = []
+        import os
+        import pathlib
+        
+        for path in folders:
+            folder = '/'.join(path.split('/')[:-1])
+
+            try:
+                os.makedirs("/"+folder,exist_ok=True)
+            except FileExistsError:
+                print(f"{path} already exists.")
+            
+            # try:
+            #     pathlib.Path(path).mkdir(parents=True, exist_ok=True)
+            # except:
+            #     msg = f"Problem creating {path}"
+            #     self._errors.append([msg])
+            #     print(msg)
+        # [os.mkdirs(path) for path in folders]
+    
+
+        
         
         ## Save filenames 
         self.filename_for_key = filename_for_key
