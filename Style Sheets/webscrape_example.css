@@ -1,0 +1,19 @@
+    H3 {
+        color: red;
+        font-size: 30pt;
+    }
+    
+    H1 {
+        color: blue;
+    }
+    
+    #part2header {
+        color: red;
+        font-size: 2em;
+    }
+    
+    ul {
+        text-align: center;
+        color: dodgerblue;
+        size: 3rem;
+    }

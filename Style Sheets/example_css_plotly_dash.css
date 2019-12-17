@@ -1,0 +1,219 @@
+.figure {
+    display: flexbox;
+    width: 90%;
+    /* border:1px solid slategray; */
+    margin-right: 30%;
+    margin-left: 0%;
+    /* margin-left:auto; */
+    /* margin-right:2%;  */
+}
+
+.interactive_output {
+    display: block;
+    margin-block-start: 5%;
+    /* padding:1%; */
+    /* margin-top:2%; */
+    border: 3px solid white;
+}
+
+h2#app-title {
+    color: white;
+    /* border-top:2px solid white; */
+    font-size: 2.5em;
+    line-height: 1.1em;
+    font-family: Cambria;
+    /* font-style: italic; */
+}
+
+h3 {
+    /* padding-top:1.5em; */
+    /* font-style: italic; */
+    text-align: center;
+    color: red;
+    font-size: 1.8em;
+}
+
+#app {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white;
+}
+
+#full-search-menu {
+    display: flex;
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid cornflowerblue;
+    width: 80%;
+    padding: 2%;
+}
+
+#submit-button {
+    display: flex;
+    /* margin-block: 2em; */
+    font-size: 1.5em;
+    border: 1px solid cornflowerblue;
+}
+
+#display_results {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    text-align: center;
+    color: black;
+    font-size: 1.5em;
+    width: 50%;
+}
+
+th {
+    font-weight: bold;
+    /* background-color: black; */
+    /* display: inline-block; */
+    /* color:white; */
+}
+
+img {
+    display: block;
+    background-color: white;
+}
+
+img {
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 20px solid pink; */
+}
+
+button {
+    display: block;
+    margin-block: 2em;
+    font-size: 2em;
+    border: 5px solid cornflowerblue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_header {
+    color: cornflowerblue;
+    width: 100%;
+    font-family: Cambria;
+    text-align: center;
+    font-size: 4em;
+    font-stretch: expanded;
+    font-weight: bold;
+}
+
+blockquote {
+    font-family: Cambria;
+    display: block;
+    width: 70%;
+    margin-left: 5%;
+    margin-right: 20%;
+    font-style: italic;
+    border-color: white;
+    border-left: 2pt solid white;
+    line-height: 110%;
+    font-size: 1.1em;
+    color: lightskyblue;
+    padding-left: 3%;
+}
+
+#main-div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wordcloud-figures {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1:not(#main_header) {
+    color: greenyellow;
+    width: 100%;
+    font-family: Cambria;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    /* padding-top:1em; */
+}
+
+#my_name {
+    color: white;
+    font-family: Cambria;
+    font-size: 1em;
+    text-align: right;
+    padding-left: 50%;
+    line-height: 90%;
+    padding-bottom: 1%;
+    color: white
+}
+
+body {
+    font-family: Cambria;
+    background-color: black;
+    color: white;
+    font-size: 1.01em;
+    padding-left: 15%;
+    width: 70%;
+}
+
+#quoted_tweet {
+    text-align: center;
+}
+
+code {
+    width: 90%;
+    /* background-color:white; */
+}
+
+ol,
+ul {
+    width: 90%;
+    font-family: Cambria;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 1.1em;
+    padding-bottom: 1.1em;
+    /* font-size: 1.05em; */
+}
+
+h2:not(.app) {
+    color: slategray;
+    margin-top: 3em;
+    /* border-top:2px solid white; */
+    font-size: 2.5em;
+    line-height: 1.1em;
+    font-family: Cambria;
+    /* font-style: italic; */
+    padding-top: 3%;
+}
+
+h3 {
+    /* padding-top:1.5em; */
+    /* font-style: italic; */
+    text-align: center;
+    color: skyblue;
+    font-size: 1.8em;
+}
+
+h4,
+h5,
+h6 {
+    /* padding-top:1%; */
+    /* font-style: italic; */
+    color: lightblue;
+    font-size: 1.5em;
+    padding-left: 2%;
+}
