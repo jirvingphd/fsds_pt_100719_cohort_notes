@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="super_dist_missing <= 0.5\ngini = 0.5\nsamples = 25944\nvalue = [12972, 12972]\nclass = 0", fillcolor="#ffffff"] ;
+1 [label="super_dist_ISC <= 0.5\ngini = 0.489\nsamples = 17216\nvalue = [7339, 9877]\nclass = 1", fillcolor="#cce6f8"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="super_dist_Interstate Compact <= 0.5\ngini = 0.487\nsamples = 16944\nvalue = [7104, 9840]\nclass = 1", fillcolor="#c8e4f8"] ;
+1 -> 2 ;
+3 [label="gini = 0.485\nsamples = 16703\nvalue = [6894, 9809]\nclass = 1", fillcolor="#c4e2f7"] ;
+2 -> 3 ;
+4 [label="gini = 0.224\nsamples = 241\nvalue = [210, 31]\nclass = 0", fillcolor="#e99456"] ;
+2 -> 4 ;
+5 [label="target_pop_Yes <= 0.5\ngini = 0.235\nsamples = 272\nvalue = [235, 37]\nclass = 0", fillcolor="#e99558"] ;
+1 -> 5 ;
+6 [label="gini = 0.05\nsamples = 116\nvalue = [113, 3]\nclass = 0", fillcolor="#e6843e"] ;
+5 -> 6 ;
+7 [label="gini = 0.341\nsamples = 156\nvalue = [122, 34]\nclass = 0", fillcolor="#eca470"] ;
+5 -> 7 ;
+8 [label="report_year_2018 <= 0.5\ngini = 0.458\nsamples = 8728\nvalue = [5633, 3095]\nclass = 0", fillcolor="#f3c6a6"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="race_ethnicity_White - Hispanic <= 0.5\ngini = 0.471\nsamples = 7861\nvalue = [4884, 2977]\nclass = 0", fillcolor="#f5ceb2"] ;
+8 -> 9 ;
+10 [label="gini = 0.476\nsamples = 7389\nvalue = [4499, 2890]\nclass = 0", fillcolor="#f6d2b8"] ;
+9 -> 10 ;
+11 [label="gini = 0.301\nsamples = 472\nvalue = [385, 87]\nclass = 0", fillcolor="#eb9d66"] ;
+9 -> 11 ;
+12 [label="target_pop_Yes <= 0.5\ngini = 0.235\nsamples = 867\nvalue = [749, 118]\nclass = 0", fillcolor="#e99558"] ;
+8 -> 12 ;
+13 [label="gini = 0.106\nsamples = 319\nvalue = [301, 18]\nclass = 0", fillcolor="#e78945"] ;
+12 -> 13 ;
+14 [label="gini = 0.298\nsamples = 548\nvalue = [448, 100]\nclass = 0", fillcolor="#eb9d65"] ;
+12 -> 14 ;
+}

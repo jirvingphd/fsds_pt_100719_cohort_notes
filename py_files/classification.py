@@ -56,3 +56,26 @@ def plot_cm(cnf_matrix,thresh=0.5):
 #     plt.title(f"Confusion Matrix (overall acc={round(acc,2)})")
     plt.show()
 
+
+    
+def visualize_tree(tree,feature_names=None,class_names=['0','1'],format_='png',
+                   kws={},save_filename=None):
+    """Visualizes a sklearn tree using sklearn.tree.export_graphviz"""
+    from sklearn.tree import export_graphviz
+    from IPython.display import SVG
+    import graphviz #import Source
+    from IPython.display import display
+    
+    if feature_names is None:
+        feature_names=X_train.columns
+
+    tree_viz_kws =  dict(out_file=None,rounded=True, rotate=False, filled = True)
+    tree_viz_kws.update(kws)
+
+    # tree.export_graphviz(dt) #if you wish to save the output to a dot file instead
+    tree_data=export_graphviz(tree,feature_names=feature_names, 
+                                   class_names=class_names,**tree_viz_kws)
+    graph = graphviz.Source(tree_data,format=format_)#'png')
+    display(graph)
+    if save_filename is not None:
+        graph.render(save_filename)
