@@ -126,3 +126,7 @@ dmypy.json
 .pyre/
 .DS_Store
 sect_12_APIs_combined-Copy1.ipynb
+catboost_info/catboost_training.json
+catboost_info/learn/events.out.tfevents
+catboost_info/learn_error.tsv
+catboost_info/time_left.tsv
